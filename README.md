@@ -26,7 +26,7 @@
 # Setup Instructions
 - Prerequisites
 - Python 3.x
-- MySQL or MariaDB
+- MySQL or MariaDB or SQLACHEMY
 - Git
 
 ![Screenshot 2024-11-06 182835](https://github.com/user-attachments/assets/08245132-9c47-4e2b-a422-70974adb3bc9)
