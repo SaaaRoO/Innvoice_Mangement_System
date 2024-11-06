@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>CRUD Application for Units and Invoice Details</h1>
+    
+    <!-- Add New Entry Form -->
+    <section>
+        <h2>Add New Invoice</h2>
+        <form id="addInvoiceForm">
+            <input type="text" id="lineNo" placeholder="Line No" required />
+            <input type="text" id="productName" placeholder="Product Name" required />
+            <input type="text" id="unitNo" placeholder="Unit No" required />
+            <input type="number" id="price" placeholder="Price" required />
+            <input type="number" id="quantity" placeholder="Quantity" required />
+            <input type="date" id="expiryDate" required />
+            <button type="submit">Add Invoice</button>
+            <input type="hidden" id="editInvoiceId" value="">
+
+        </form>
+    </section>
+    
+    <!-- List of Invoices -->
+    <section>
+        <h2>Invoices List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Line No</th>
+                    <th>Product Name</th>
+                    <th>Unit No</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Expiry Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="invoiceTable">
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </section>
+    
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
