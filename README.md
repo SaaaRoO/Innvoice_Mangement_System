@@ -1,5 +1,5 @@
 ## Invoice Management System
-- This is a Python-based web application for managing invoices. Built with Flask, HTML, CSS, and JavaScript, it allows users to perform CRUD (Create, Read, Update, Delete) operations on invoices. The app connects to a MySQL or MariaDB database and provides a simple, responsive user interface for managing invoice records.
+- This is a Python-based web application for managing invoices. Built with Flask, HTML, CSS, and JavaScript, it allows users to perform CRUD (Create, Read, Update, Delete) operations on invoices. The app connects to SQLACHEMY  to handle database and provides a simple, responsive user interface for managing invoice records.
 
 # Table of Contents:
 
